@@ -53,6 +53,7 @@ div.content {
 td{
     height: 120px;
     vertical-align: center;
+    font: normal 18px Arial, sans-serif;
 }
 
 body{
