@@ -53,11 +53,11 @@ div.content {
 td{
     height: 120px;
     vertical-align: center;
-    font: normal 18px Arial, sans-serif;
+    /* font: normal 18px Arial, sans-serif; */
 }
 
 body{
-    font: normal 18px Arial, sans-serif;
+    font: normal 16px Arial, sans-serif;
 }
 
 li{
