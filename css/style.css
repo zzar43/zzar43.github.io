@@ -3,7 +3,7 @@
     margin: 0px;
     padding: 0;
     width: 180px;
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
     position: fixed;
     /* height: 50%; */
     overflow: auto;
@@ -62,4 +62,40 @@ body{
 
 li{
     margin: 5px;
+}
+
+/* color mode */
+body{
+    color: #333;
+    background-color: #eee;
+}
+.sidebar {
+    background-color: #f1f1f1;
+}
+.sidebar a {
+    color: black;
+}
+.sidebar a.active {
+    background-color: #828282;
+    color: white;
+}
+.sidebar a:hover:not(.active) {
+    background-color: #828282;
+    color: white;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #ccc;
+        background-color: #1f1f1f;
+    }
+    img {
+        opacity: .8;
+    }
+    .sidebar {
+        background-color: #2a2a2a;
+        color: #ccc;;
+    }
+    .sidebar a {
+        color: #ccc;;
+    }
 }
