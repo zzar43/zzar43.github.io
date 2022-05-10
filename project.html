@@ -16,13 +16,36 @@
     <div class="content">
         <h3>A multi-layer SGD scheme [<a href="https://github.com/zzar43/ML_SGD_study">GitHub</a>]</h3>
 
+        This work investigates SGD from the viewpoint of graduated optimization, which is a widely applied approach for non-convex optimization problems.
+        Instead of the actual optimization problem, a series of smoothed optimization problems that can be achieved in various ways are solved in the graduated optimization approach.
+        In this work, a formal formulation of the graduated optimization is provided based on approximate identity, which generalizes the idea of Gaussian smoothing.
+        Also, the asymptotic convergence result is achieved with the techniques in variational analysis.
+        Then, we show that the traditional SGD method can be applied to solve the smoothed optimization problem.
+        The Monte Carlo integration is used to achieve the gradient in the smoothed problem, which may be consistent with distributed computing schemes in real-life applications.
+        From the assumptions on the actual optimization problem, the convergence results of SGD for the smoothed problem can be derived straightforwardly.
+        Numerical examples show the evidence that the graduated optimization approach may provide more accurate training results in certain cases. 
+
         <h3>MRI image processing [<a href="https://github.com/zzar43/MRI_image_process">GitHub</a>]</h3>
         This repo is used to store MRI image processing programs.
-        This is a part of an ongoing project on U-Net.
+        This is a part of an <a href="https://github.com/zzar43/UNet_IDP">ongoing project</a> on U-Net.
 
         <h3>Inexact scale gradient projection and application in seismic imaging [<a href="https://github.com/zzar43/FWI_multi_priori">GitHub</a>]</h3>
 
+        The gradient projection methods are often used to solve constrained optimization problems, and the closed-form projection function is necessary since the projection has to be evaluated exactly. 
+        A constraint set expanding strategy is designed for the gradient projection methods such that the projection can be evaluated inexactly, which extends the application scope of the gradient projection methods. 
+        The convergence analysis is provided with proper assumptions.
+        The proposed algorithm is used to incorporate a priori information to inverse problems which can be represented in an optimization scheme.
+        The L-BFGS Hessian approximation and the above constraint set expanding strategy are used.
+        Numerical examples show that the proposed optimization scheme is flexible for integrating multiple types of constraint sets such as total variation constraint, sparsity constraint, box constraint, and hyperplane constraint into the optimization problem.
+
         <h3>Full waveform inversion with OT-based distances [<a href="https://github.com/zzar43/FWI_OT">GitHub</a>]</h3>
+
+        Full waveform inversion (FWI) is an important and popular technique in subsurface earth property estimation. 
+        We introduce an unbalanced optimal transport (UOT) distance with Kullback-Leibler divergence to replace the L2 distance in the FWI problem. 
+        Also, a mixed L1/Wasserstein distance is constructed that preserves the convex properties with respect to shift, dilation, and amplitude change operation. 
+        An entropy regularization approach and convolutional scaling algorithms are used to compute the distance and the gradient efficiently. 
+        Two strategies of normalization methods that transform the seismic signals into non-negative functions are discussed. 
+        The numerical examples are presented.
 
         <h3>PDE solver</h3>
         <ul>
